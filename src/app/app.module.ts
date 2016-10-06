@@ -10,6 +10,7 @@ import { CommentComponent } from './comments/comment.component';
 import { CommentsPageComponent } from './comments/comments-page.component';
 import { FeedEntryComponent } from './feed/feed-entry.component';
 import { VoteButtonsComponent } from './feed/vote-buttons.component';
+import { EmojifyPipe } from './shared/emojify.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { VoteButtonsComponent } from './feed/vote-buttons.component';
     CommentComponent,
     CommentsPageComponent,
     FeedEntryComponent,
-    VoteButtonsComponent
+    VoteButtonsComponent,
+    EmojifyPipe
   ],
   imports: [
     BrowserModule,
