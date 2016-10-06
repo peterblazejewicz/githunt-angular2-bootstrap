@@ -13,6 +13,7 @@ import { VoteButtonsComponent } from './feed/vote-buttons.component';
 import { EmojifyPipe } from './shared/emojify.pipe';
 import { InfoLabelComponent } from './shared/info-label.component';
 import { RepoInfoComponent } from './shared/repo-info.component';
+import { LoadingComponent } from './shared/loading.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { RepoInfoComponent } from './shared/repo-info.component';
     VoteButtonsComponent,
     EmojifyPipe,
     InfoLabelComponent,
-    RepoInfoComponent
+    RepoInfoComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
