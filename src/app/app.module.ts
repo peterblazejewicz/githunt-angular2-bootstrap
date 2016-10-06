@@ -12,6 +12,7 @@ import { FeedEntryComponent } from './feed/feed-entry.component';
 import { VoteButtonsComponent } from './feed/vote-buttons.component';
 import { EmojifyPipe } from './shared/emojify.pipe';
 import { InfoLabelComponent } from './shared/info-label.component';
+import { RepoInfoComponent } from './shared/repo-info.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { InfoLabelComponent } from './shared/info-label.component';
     FeedEntryComponent,
     VoteButtonsComponent,
     EmojifyPipe,
-    InfoLabelComponent
+    InfoLabelComponent,
+    RepoInfoComponent
   ],
   imports: [
     BrowserModule,
