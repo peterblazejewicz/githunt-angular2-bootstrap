@@ -11,6 +11,7 @@ import { CommentsPageComponent } from './comments/comments-page.component';
 import { FeedEntryComponent } from './feed/feed-entry.component';
 import { VoteButtonsComponent } from './feed/vote-buttons.component';
 import { EmojifyPipe } from './shared/emojify.pipe';
+import { InfoLabelComponent } from './shared/info-label.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { EmojifyPipe } from './shared/emojify.pipe';
     CommentsPageComponent,
     FeedEntryComponent,
     VoteButtonsComponent,
-    EmojifyPipe
+    EmojifyPipe,
+    InfoLabelComponent
   ],
   imports: [
     BrowserModule,
