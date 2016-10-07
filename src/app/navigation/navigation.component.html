@@ -1,20 +1,14 @@
-<nav class="navbar navbar-default">
-	<div class="container">
-		<div class="navbar-header" routerLinkActive="active">
-			<a routerLink="/feed/top" class="navbar-brand">GitHunt</a>
-		</div>
-		<ul class="nav navbar-nav">
-			<li routerLinkActive="active">
-				<a title="Top" routerLink="/feed/top">
-            Top
-          </a>
-			</li>
-			<li routerLinkActive="active">
-				<a title="New" routerLink="/feed/new">
-            New
-          </a>
-			</li>
-		</ul>
-		<githunt-profile></githunt-profile>
-	</div>
+<nav class="navbar navbar-light bg-faded">
+  <div class="container">
+    <a routerLink="/feed/top" class="navbar-brand" routerLinkActive="active">GitHunt</a>
+    <ul class="nav navbar-nav">
+      <li class="nav-item" routerLinkActive="active">
+        <a title="Top" routerLink="/feed/top" class="nav-link">Top</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" title="New" routerLink="/feed/new">New</a>
+      </li>
+    </ul>
+    <githunt-profile class="pull-xs-right"></githunt-profile>
+  </div>
 </nav>
