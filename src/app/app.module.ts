@@ -14,6 +14,7 @@ import { EmojifyPipe } from './shared/emojify.pipe';
 import { InfoLabelComponent } from './shared/info-label.component';
 import { RepoInfoComponent } from './shared/repo-info.component';
 import { LoadingComponent } from './shared/loading.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LoadingComponent } from './shared/loading.component';
     EmojifyPipe,
     InfoLabelComponent,
     RepoInfoComponent,
-    LoadingComponent
+    LoadingComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
