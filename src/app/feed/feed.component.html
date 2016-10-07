@@ -1,3 +1,11 @@
-<p>
-  feed works!
-</p>
+<githunt-loading *ngIf="loading"></githunt-loading>
+    <div *ngIf="!loading">
+      <githunt-feed-entry
+        *ngFor="let entry of feed"
+        [entry]="entry"
+        [currentUser]="currentUser"
+        (onVote)="onVote($event)">
+      </githunt-feed-entry>
+
+      <a (click)="fetchMore()">Load more</a>
+    </div>
