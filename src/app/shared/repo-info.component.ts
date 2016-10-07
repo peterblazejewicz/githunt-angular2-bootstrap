@@ -4,7 +4,9 @@ import { Angular2Apollo } from 'angular2-apollo';
 import { commentQuery } from '../comments/comments-page.component';
 
 @Component({
-  selector: 'githunt-repo-info'
+  selector: 'githunt-repo-info',
+  templateUrl: './repo-info.component.html',
+  styleUrls: ['./repo-info.component.scss']
 })
 export class RepoInfoComponent implements OnInit {
   @Input() fullName: string;

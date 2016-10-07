@@ -1,7 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+
+import { ApolloModule } from 'angular2-apollo';
+import { TimeAgoPipe } from 'angular2-moment';
 
 import { AppComponent } from './app.component';
 import { GithuntRoutingModule } from './app-routing.module';
@@ -15,6 +18,9 @@ import { InfoLabelComponent } from './shared/info-label.component';
 import { RepoInfoComponent } from './shared/repo-info.component';
 import { LoadingComponent } from './shared/loading.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { ProfileComponent } from './profile/profile.component';
+
+import { client } from './client';
 
 @NgModule({
   declarations: [
@@ -28,13 +34,17 @@ import { NavigationComponent } from './navigation/navigation.component';
     InfoLabelComponent,
     RepoInfoComponent,
     LoadingComponent,
-    NavigationComponent
+    NavigationComponent,
+    ProfileComponent,
+    TimeAgoPipe
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    GithuntRoutingModule
+    ReactiveFormsModule,
+    GithuntRoutingModule,
+    ApolloModule.withClient(client)
   ],
   providers: [],
   bootstrap: [AppComponent]
